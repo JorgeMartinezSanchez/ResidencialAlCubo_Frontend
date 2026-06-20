@@ -4,6 +4,7 @@ class HttpClient {
   
   constructor() {
     this.baseUrl = import.meta.env.VITE_API_URL;
+    console.log('API URL:', this.baseUrl);
   }
   
   private getUrl(path: string): string {
