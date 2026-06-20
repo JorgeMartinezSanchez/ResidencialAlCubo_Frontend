@@ -3,7 +3,7 @@ class HttpClient {
   private baseUrl: string;
   
   constructor() {
-    this.baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5211';
+    this.baseUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:5211';
   }
   
   private getUrl(path: string): string {
